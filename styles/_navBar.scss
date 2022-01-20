@@ -1,0 +1,36 @@
+nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: turquoise;
+    border-radius: 50px;
+
+    h3 {
+
+        font-size: 1.5rem;
+    }
+
+    
+    ul {
+        
+        display: flex;
+        
+            li {
+                margin: auto 10px;
+                cursor: pointer;
+                transition: 0.2s;
+    
+                &:hover {
+                    transform: scale(1.2);
+                    color: rgb(6, 10, 247);
+                }
+            }
+    }
+}
+
