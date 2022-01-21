@@ -1,0 +1,29 @@
+.aboutMe {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    width: 90%;
+    margin: 50px auto;
+    gap: 100px;
+    
+
+    h3 {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        line-height: 50px;
+    }
+    p {
+        font-family: "font-2";
+        font-size: 1.1rem;
+    }
+    
+
+    .abilities {
+    
+        li {
+            font-family: "font-2";
+            font-size: 1.1 rem;
+        }
+        
+       
+    }
+}

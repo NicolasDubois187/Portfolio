@@ -1,7 +1,7 @@
 nav {
     
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: auto 0;
     padding: 20px;
@@ -10,10 +10,12 @@ nav {
     height: 80px;
     background: turquoise;
     border-radius: 50px;
+    border: 2px solid grey;
+    z-index: 1;
 
     h3 {
 
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     
@@ -22,6 +24,7 @@ nav {
         display: flex;
         
             li {
+                font-size: 1.2rem;
                 margin: auto 10px;
                 cursor: pointer;
                 transition: 0.2s;

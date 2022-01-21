@@ -25,16 +25,15 @@ html {
 
 body {
   font-family: "font-1";
-  background-color: rgba(178, 243, 237, 0.753);
+  background-color: whitesmoke;
 }
 
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -45,10 +44,12 @@ nav {
   height: 80px;
   background: turquoise;
   border-radius: 50px;
+  border: 2px solid grey;
+  z-index: 1;
 }
 
 nav h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 nav ul {
@@ -58,6 +59,7 @@ nav ul {
 }
 
 nav ul li {
+  font-size: 1.2rem;
   margin: auto 10px;
   cursor: pointer;
   -webkit-transition: 0.2s;
@@ -71,19 +73,53 @@ nav ul li:hover {
 }
 
 header {
-  padding-top: 100px;
+  padding-top: 150px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 1fr;
       grid-template-columns: 50% 1fr;
+  width: 90%;
+  margin: 0 auto;
 }
 
 header .leftTitle {
-  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .leftTitle h1 {
   font-size: 4rem;
+}
+
+header .leftTitle button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "font-2";
+  background: rgba(38, 199, 191, 0.671);
+  border-radius: 20px;
+  border-style: none;
+  -webkit-box-shadow: 0 1px 10px rgba(26, 23, 23, 0.575);
+          box-shadow: 0 1px 10px rgba(26, 23, 23, 0.575);
+  cursor: pointer;
+  -webkit-transform: 0.2s;
+          transform: 0.2s;
+}
+
+header .leftTitle button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #060af7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .rightTitle {
@@ -92,5 +128,45 @@ header .rightTitle {
   height: 300px;
   border-radius: 150px;
   margin: 0 auto;
+  -webkit-box-shadow: 0 1px 10px rgba(26, 23, 23, 0.836);
+          box-shadow: 0 1px 10px rgba(26, 23, 23, 0.836);
+}
+
+.aboutMe {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 1fr;
+      grid-template-columns: 50% 1fr;
+  width: 90%;
+  margin: 50px auto;
+  gap: 100px;
+}
+
+.aboutMe h3 {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+
+.aboutMe p {
+  font-family: "font-2";
+  font-size: 1.1rem;
+}
+
+.aboutMe .abilities li {
+  font-family: "font-2";
+  font-size: 1.1 rem;
+}
+
+.skills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 1fr;
+      grid-template-columns: 50% 1fr;
+}
+
+.skills .logo {
+  background: url(../assets/icons/logos.png) center/cover;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
