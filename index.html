@@ -18,11 +18,11 @@
     <nav id="nav">
       <h3>Nicolas DUBOIS</h3>
       <ul>
-        <li>ABOUT ME</li>
-        <li>SKILLS</li>
-        <li>EXPERIENCE</li>
-        <li>MY WORK</li>
-        <li>CONTACTS</li>
+        <a href="#aboutMe"><li>ABOUT ME</li></a>
+        <a href="#skills"><li>SKILLS</li></a>
+        <a href="#experience"><li>EXPERIENCE</li></a>
+        <a href="#myWork"><li>MY WORK</li></a>
+        <a href="#contact"><li>CONTACTS</li></a>
       </ul>
       <ul>
         <li>
@@ -43,130 +43,135 @@
       </div>
       <div class="rightTitle"></div>
     </header>
-    <main>
-      <div class="aboutMe">
-        <div class="background">
-          <h3>MY BACKGROUND</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            veritatis animi natus tenetur expedita odit est esse exercitationem
-            alias saepe? Obcaecati officiis magni labore esse exercitationem ea
-            veniam deserunt illo!
-          </p>
+    <div id="aboutMe"></div>
+    <div class="aboutMe">
+      <div class="background">
+        <h3>MY BACKGROUND</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          veritatis animi natus tenetur expedita odit est esse exercitationem
+          alias saepe? Obcaecati officiis magni labore esse exercitationem ea
+          veniam deserunt illo!
+        </p>
+      </div>
+      <div class="abilities">
+        <h3>MY ABILITIES</h3>
+        <ul>
+          <li>abilitie 1</li>
+          <li>abilitie 2</li>
+          <li>abilitie 3</li>
+          <li>abilitie 4</li>
+          <li>abilitie 5</li>
+        </ul>
+      </div>
+    </div>
+    <div id="skills"></div>
+    <div class="skills">
+      <div class="skillsContainer">
+        <h3>SKILLS</h3>
+        <p>HTML</p>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+            role="progressbar"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 75%"
+          ></div>
         </div>
-        <div class="abilities">
-          <h3>MY ABILITIES</h3>
-          <ul>
-            <li>abilitie 1</li>
-            <li>abilitie 2</li>
-            <li>abilitie 3</li>
-            <li>abilitie 4</li>
-            <li>abilitie 5</li>
-          </ul>
+        <p>CSS</p>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            role="progressbar"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 50%"
+          ></div>
+        </div>
+        <p>Javascript</p>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+            role="progressbar"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 25%"
+          ></div>
         </div>
       </div>
-      <div class="skills">
-        <div class="skillsContainer">
-          <h3>SKILLS</h3>
-          <p>HTML</p>
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
-              role="progressbar"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 75%"
-            ></div>
-          </div>
-          <p>CSS</p>
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
-              role="progressbar"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 50%"
-            ></div>
-          </div>
-          <p>Javascript</p>
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
-              role="progressbar"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 25%"
-            ></div>
-          </div>
+      <div class="logo">
+        <img
+          src="./assets/icons/logos.png"
+          height="250px"
+          alt="photo logos html/css/javascript"
+        />
+      </div>
+    </div>
+    <div id="experience"></div>
+    <div class="experience">
+      <h3>EDUCATION</h3>
+      <div class="educations">
+        <div class="education-1">
+          <h4>title</h4>
+          <p>details</p>
         </div>
-        <div class="logo">
-          <img
-            src="./assets/icons/logos.png"
-            height="250px"
-            alt="photo logos html/css/javascript"
-          />
+        <div class="education-2">
+          <h4>title</h4>
+          <p>details</p>
+        </div>
+        <div class="education-3">
+          <h4>title</h4>
+          <p>details</p>
         </div>
       </div>
-      <div class="experience">
-        <h3>EDUCATION</h3>
-        <div class="educations">
-          <div class="education-1">
-            <h4>title</h4>
-            <p>details</p>
-          </div>
-          <div class="education-2">
-            <h4>title</h4>
-            <p>details</p>
-          </div>
-          <div class="education-3">
-            <h4>title</h4>
-            <p>details</p>
-          </div>
+    </div>
+    <div id="myWork"></div>
+    <div class="myWork">
+      <h4>PORTFOLIO</h4>
+      <div class="integrations">
+        <div class="integration-1">
+          <h3>titre</h3>
+          <img src="./assets/img/bg-slider-06.jpg" alt="" />
+          <a href="#"><button>LINK</button></a>
+        </div>
+        <div class="integration-2">
+          <h3>titre</h3>
+          <img src="img" alt="" />
+          <a href="#"><button>LINK</button></a>
+        </div>
+        <div class="integration-3">
+          <h3>titre</h3>
+          <img src="img" alt="" />
+          <a href="#"><button>LINK</button></a>
+        </div>
+        <div class="integration-4">
+          <h3>titre</h3>
+          <img src="img" alt="" />
+          <a href="#"><button>LINK</button></a>
         </div>
       </div>
-      <div class="my-work">
-        <h3>Portfolio</h3>
-        <div class="integrations">
-          <div class="integration-1">
-            <h3>titre</h3>
-            <img src="img" alt="" />
-            <a href="#"><button>LINK</button></a>
-          </div>
-          <div class="integration-2">
-            <h3>titre</h3>
-            <img src="img" alt="" />
-            <a href="#"><button>LINK</button></a>
-          </div>
-          <div class="integration-3">
-            <h3>titre</h3>
-            <img src="img" alt="" />
-            <a href="#"><button>LINK</button></a>
-          </div>
-          <div class="integration-4">
-            <h3>titre</h3>
-            <img src="img" alt="" />
-            <a href="#"><button>LINK</button></a>
-          </div>
+    </div>
+    <div class="contacts" id="contact">
+      <h3>CONTACTEZ-MOI</h3>
+      <form action="">
+        <div class="formContainer">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+          <label for="email">Your email</label>
+          <input type="text" id="email" />
+          <label for="message" id="mess">Message</label>
+          <textarea id="message" cols="30" rows="5"></textarea>
+          <input type="submit" />
         </div>
-      </div>
-      <div class="contacts">
-        <h2>Join me</h2>
-        <form action="">
-          <div class="form-container">
-            <label for="name">Name</label>
-            <input type="text" id="name" />
-            <label for="email">Your email</label>
-            <input type="text" id="email" />
-            <label for="message" id="mess">Message</label>
-            <textarea id="message" cols="30" rows="10"></textarea>
-            <input type="submit" />
-          </div>
-        </form>
-      </div>
-    </main>
+      </form>
+    </div>
+    <footer>
+      <em>Nicolas Dubois - 2022</em>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>

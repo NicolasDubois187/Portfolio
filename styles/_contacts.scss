@@ -1,0 +1,29 @@
+.contacts {
+
+    max-width: 90%;
+    margin: 50px auto;
+
+    .formContainer {
+        display: grid;
+        max-width: 30%;
+        margin: 10px auto;
+
+        label {
+            margin: 10px;
+        }
+
+        input {
+            border-radius: 5px;
+            padding: 5px;
+        }
+        textarea {
+            border-radius: 5px;
+            padding: 5px;
+        }
+        input[type="submit"] {
+            width: 50%;
+            margin: 20px auto;
+        }
+    }
+  
+}
