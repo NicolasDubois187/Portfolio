@@ -24,8 +24,8 @@ html {
 }
 
 body {
+  background: rgba(129, 236, 195, 0.295);
   font-family: "font-1";
-  background-color: whitesmoke;
 }
 
 nav {
@@ -104,7 +104,7 @@ header .leftTitle button {
   font-size: 1.2rem;
   font-weight: 600;
   font-family: "font-2";
-  background: rgba(38, 199, 191, 0.671);
+  background: #26c7bf;
   border-radius: 20px;
   border-style: none;
   -webkit-box-shadow: 0 1px 10px rgba(26, 23, 23, 0.575);
@@ -163,10 +163,28 @@ header .rightTitle {
   display: grid;
   -ms-grid-columns: 50% 1fr;
       grid-template-columns: 50% 1fr;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background: rgba(46, 236, 21, 0.808);
+  -webkit-box-shadow: 0 1px 10px #1a1717;
+          box-shadow: 0 1px 10px #1a1717;
+}
+
+.skills p {
+  margin-top: 10px;
+}
+
+.skills .skillsContainer {
+  padding: 20px 50px;
 }
 
 .skills .logo {
-  background: url(../assets/icons/logos.png) center/cover;
-  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.skills .logo img {
+  border-radius: 50px;
 }
 /*# sourceMappingURL=style.css.map */
