@@ -12,12 +12,29 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background:whitesmoke;
+        background:rgba(64, 192, 224, 0.24);
+        border-radius: 30px;
 
         img {
             max-width: 100%;
         }
+        button {
+            margin-top: 20px;
+            padding: 5px 20px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 1px 10px rgba(53, 52, 52, 0.411);
+            background: rgba(245, 245, 245, 0.74);
+            transition: 0.2s;
+
+            &:hover {
+                background: black;
+                color: whitesmoke;
+            }
+        }
         & > div {
+            display: grid;
+            text-align: center;
             flex: 1 0 25%;
             min-width: 100px;
             max-width: 250px; 

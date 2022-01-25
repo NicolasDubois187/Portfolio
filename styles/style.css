@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background: rgba(129, 236, 195, 0.295);
+  background: rgba(64, 192, 224, 0.185);
   font-family: "font-1";
 }
 
@@ -63,7 +63,7 @@ nav {
   position: fixed;
   width: 100%;
   height: 80px;
-  background: turquoise;
+  background: #40c0e0;
   border-radius: 50px;
   border: 2px solid grey;
   z-index: 1;
@@ -126,7 +126,7 @@ header .leftTitle button {
   font-size: 1.2rem;
   font-weight: 600;
   font-family: "font-2";
-  background: #26c7bf;
+  background: #40c0e0;
   border-radius: 20px;
   border-style: none;
   -webkit-box-shadow: 0 1px 10px rgba(26, 23, 23, 0.575);
@@ -188,7 +188,7 @@ header .rightTitle {
   width: 90%;
   margin: 0 auto;
   border-radius: 50px;
-  background: rgba(46, 236, 21, 0.808);
+  background: #40c0e0;
   -webkit-box-shadow: 0 1px 10px #1a1717;
           box-shadow: 0 1px 10px #1a1717;
 }
@@ -241,14 +241,35 @@ header .rightTitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: whitesmoke;
+  background: rgba(64, 192, 224, 0.24);
+  border-radius: 30px;
 }
 
 .myWork .integrations img {
   max-width: 100%;
 }
 
+.myWork .integrations button {
+  margin-top: 20px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 0 1px 10px rgba(53, 52, 52, 0.411);
+          box-shadow: 0 1px 10px rgba(53, 52, 52, 0.411);
+  background: rgba(245, 245, 245, 0.74);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.myWork .integrations button:hover {
+  background: black;
+  color: whitesmoke;
+}
+
 .myWork .integrations > div {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 25%;
           flex: 1 0 25%;
@@ -281,15 +302,21 @@ header .rightTitle {
 .contacts .formContainer input {
   border-radius: 5px;
   padding: 5px;
+  background: rgba(245, 245, 245, 0.836);
+  border: 0.5px solid #40c0e0;
 }
 
 .contacts .formContainer textarea {
   border-radius: 5px;
   padding: 5px;
+  background: rgba(245, 245, 245, 0.836);
+  border: 0.5px solid #40c0e0;
 }
 
 .contacts .formContainer input[type="submit"] {
   width: 50%;
   margin: 20px auto;
+  border: none;
+  background-color: #40c0e0;
 }
 /*# sourceMappingURL=style.css.map */

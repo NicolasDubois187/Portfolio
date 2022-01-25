@@ -15,14 +15,20 @@
         input {
             border-radius: 5px;
             padding: 5px;
+            background: rgba(245, 245, 245, 0.836);
+            border: 0.5px solid rgb(64, 192, 224);
         }
         textarea {
             border-radius: 5px;
             padding: 5px;
+            background: rgba(245, 245, 245, 0.836);
+            border: 0.5px solid rgb(64, 192, 224);
         }
         input[type="submit"] {
             width: 50%;
             margin: 20px auto;
+            border: none;
+            background-color: rgb(64, 192, 224);
         }
     }
   
