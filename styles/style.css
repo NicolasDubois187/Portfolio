@@ -24,7 +24,9 @@ html {
 }
 
 body {
-  background: rgba(64, 192, 224, 0.185);
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0.212)), color-stop(35%, rgba(64, 192, 224, 0.85)), to(rgba(0, 213, 255, 0.616)));
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.212) 0%, rgba(64, 192, 224, 0.85) 35%, rgba(0, 213, 255, 0.616) 100%);
   font-family: "font-1";
 }
 
@@ -89,8 +91,8 @@ nav ul li {
 }
 
 nav ul li:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   color: #060af7;
 }
 
@@ -152,6 +154,9 @@ header .rightTitle {
   margin: 0 auto;
   -webkit-box-shadow: 0 1px 10px rgba(26, 23, 23, 0.836);
           box-shadow: 0 1px 10px rgba(26, 23, 23, 0.836);
+  opacity: 0;
+  -webkit-transition: 4s;
+  transition: 4s;
 }
 
 .aboutMe {
@@ -193,8 +198,15 @@ header .rightTitle {
           box-shadow: 0 1px 10px #1a1717;
 }
 
-.skills p {
+.skills span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 10px;
+}
+
+.skills p {
+  margin-right: 10px;
 }
 
 .skills .skillsContainer {
@@ -210,6 +222,10 @@ header .rightTitle {
   border-radius: 50px;
   -webkit-box-shadow: 0 1px 10px #1a1717;
           box-shadow: 0 1px 10px #1a1717;
+  -webkit-transform: translateX(250%);
+          transform: translateX(250%);
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .experience {
@@ -247,10 +263,12 @@ header .rightTitle {
 
 .myWork .integrations img {
   max-width: 100%;
+  border-radius: 5px;
 }
 
 .myWork .integrations button {
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 5px 20px;
   border-radius: 10px;
   border: none;
@@ -269,6 +287,8 @@ header .rightTitle {
 .myWork .integrations > div {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 20% 1fr 20%;
+      grid-template-rows: 20% 1fr 20%;
   text-align: center;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 25%;
@@ -276,11 +296,48 @@ header .rightTitle {
   min-width: 100px;
   max-width: 250px;
   margin: 10px;
-  background-color: #40c0e0;
+  background-color: #2bbbdf;
   border-radius: 8px;
   padding: 20px 20px 20px;
-  -webkit-box-shadow: 0 1px 10px rgba(53, 52, 52, 0.411);
-          box-shadow: 0 1px 10px rgba(53, 52, 52, 0.411);
+  -webkit-box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
+          box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
+  opacity: 0;
+}
+
+.myWork .integrations > div span {
+  border-radius: 5px;
+}
+
+.myWork .integrations #int1 {
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.myWork .integrations #int1 span {
+  background: url(../assets/img/bg-slider-06.jpg) center/cover;
+}
+
+.myWork .integrations #int2 {
+  -webkit-transition: 4s;
+  transition: 4s;
+}
+
+.myWork .integrations #int2 span {
+  background: url(../assets/img/banner.jpg) center/cover;
+}
+
+.myWork .integrations #int3 {
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.myWork .integrations #int3 span {
+  background: url(../assets/img/bg.jpg) center/cover;
+}
+
+.myWork .integrations #int4 {
+  -webkit-transition: 6s;
+  transition: 6s;
 }
 
 .contacts {
@@ -304,6 +361,8 @@ header .rightTitle {
   padding: 5px;
   background: rgba(245, 245, 245, 0.836);
   border: 0.5px solid #40c0e0;
+  -webkit-box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
+          box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
 }
 
 .contacts .formContainer textarea {
@@ -311,12 +370,20 @@ header .rightTitle {
   padding: 5px;
   background: rgba(245, 245, 245, 0.836);
   border: 0.5px solid #40c0e0;
+  -webkit-box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
+          box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
 }
 
 .contacts .formContainer input[type="submit"] {
   width: 50%;
   margin: 20px auto;
   border: none;
-  background-color: #40c0e0;
+  background-color: rgba(43, 181, 216, 0.966);
+}
+
+.contacts .formContainer input[type="submit"]:hover {
+  background-color: rgba(45, 155, 182, 0.966);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */

@@ -42,7 +42,7 @@
         <h1>Nicolas Dubois,<br />Développeur Web</h1>
         <a href="#"><button>Mon CV</button></a>
       </div>
-      <div class="rightTitle"></div>
+      <div class="rightTitle" id="idPicture"></div>
     </header>
     <div id="aboutMe"></div>
     <div class="aboutMe">
@@ -70,7 +70,10 @@
     <div class="skills">
       <div class="skillsContainer">
         <h3>COMPETENCES TECHNIQUES</h3>
-        <p>HTML => 2 mois</p>
+        <span>
+          <p>HTML :</p>
+          <em>2 mois</em>
+        </span>
         <div class="progress">
           <div
             class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
@@ -81,7 +84,10 @@
             style="width: 75%"
           ></div>
         </div>
-        <p>CSS => 1.5 mois</p>
+        <span>
+          <p>CSS :</p>
+          <em>1.5 mois</em>
+        </span>
         <div class="progress">
           <div
             class="progress-bar progress-bar-striped progress-bar-animated"
@@ -92,7 +98,10 @@
             style="width: 50%"
           ></div>
         </div>
-        <p>Javascript => 1 mois</p>
+        <span>
+          <p>Javascript :</p>
+          <em>1 mois</em>
+        </span>
         <div class="progress">
           <div
             class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
@@ -106,6 +115,7 @@
       </div>
       <div class="logo">
         <img
+          id="logoSkills"
           src="./assets/icons/logos.png"
           height="250px"
           alt="photo logos html/css/javascript"
@@ -133,23 +143,29 @@
     <div id="myWork"></div>
     <div class="myWork">
       <h4>PORTFOLIO</h4>
-      <div class="integrations">
-        <div class="integration-1">
-          <h3>titre</h3>
-          <img src="./assets/img/bg-slider-06.jpg" alt="" />
-          <a href="#"><button>Voir</button></a>
+      <div class="integrations" id="int">
+        <div class="integration-1" id="int1">
+          <h3>Le Resto</h3>
+          <span></span>
+          <a href="https://nicolasdubois187.github.io/Resto/"
+            ><button>Voir</button></a
+          >
         </div>
-        <div class="integration-2">
-          <h3>titre</h3>
-          <img src="./assets/img/bg-slider-06.jpg" alt="" />
-          <a href="#"><button>Voir</button></a>
+        <div class="integration-2" id="int2">
+          <h3>Run</h3>
+          <span></span>
+          <a href="https://nicolasdubois187.github.io/Run/"
+            ><button>Voir</button></a
+          >
         </div>
-        <div class="integration-3">
-          <h3>titre</h3>
-          <img src="./assets/img/bg-slider-06.jpg" alt="" />
-          <a href="#"><button>Voir</button></a>
+        <div class="integration-3" id="int3">
+          <h3>La Montagne</h3>
+          <span></span>
+          <a href="https://nicolasdubois187.github.io/La-Montagne/"
+            ><button>Voir</button></a
+          >
         </div>
-        <div class="integration-4">
+        <div class="integration-4" id="int4">
           <h3>titre</h3>
           <img src="./assets/img/bg-slider-06.jpg" alt="" />
           <a href="#"><button>Voir</button></a>
@@ -166,7 +182,7 @@
           <input type="text" id="email" />
           <label for="message" id="mess">Message</label>
           <textarea id="message" cols="30" rows="5"></textarea>
-          <input type="submit" />
+          <input type="submit" id="submit" />
         </div>
       </form>
     </div>

@@ -17,18 +17,25 @@
             padding: 5px;
             background: rgba(245, 245, 245, 0.836);
             border: 0.5px solid rgb(64, 192, 224);
+            box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
         }
         textarea {
             border-radius: 5px;
             padding: 5px;
             background: rgba(245, 245, 245, 0.836);
             border: 0.5px solid rgb(64, 192, 224);
+            box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
         }
         input[type="submit"] {
             width: 50%;
             margin: 20px auto;
             border: none;
-            background-color: rgb(64, 192, 224);
+            background-color: rgba(43, 181, 216, 0.966);
+
+            &:hover {
+                background-color:rgba(45, 155, 182, 0.966);
+                transform: scale(1.1);
+            }
         }
     }
   

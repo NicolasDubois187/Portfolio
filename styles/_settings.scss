@@ -19,7 +19,8 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: rgba(64, 192, 224, 0.185);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.212) 0%, rgba(64,192,224,0.85) 35%, rgba(0, 213, 255, 0.616) 100%);
     font-family: "font-1";
 
 }

@@ -14,12 +14,15 @@
         justify-content: center;
         background:rgba(64, 192, 224, 0.24);
         border-radius: 30px;
+        
 
         img {
             max-width: 100%;
+            border-radius: 5px;
         }
         button {
             margin-top: 20px;
+            margin-bottom: 20px;
             padding: 5px 20px;
             border-radius: 10px;
             border: none;
@@ -34,17 +37,43 @@
         }
         & > div {
             display: grid;
+            grid-template-rows: 20% 1fr 20%;
             text-align: center;
             flex: 1 0 25%;
             min-width: 100px;
             max-width: 250px; 
             margin: 10px;
-            background-color: rgb(64, 192, 224);
+            background-color: rgb(43, 187, 223);
             border-radius: 8px;
             padding: 20px 20px 20px;
-            box-shadow: 0 1px 10px rgba(53, 52, 52, 0.411);
-            
-          
+            box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
+            opacity: 0;
+
+            span {
+                border-radius: 5px;
+            }
+              
+        }
+        #int1 {
+            transition: 3s;
+            span {
+                background: url(../assets/img/bg-slider-06.jpg) center/cover;
+            }
+        }
+        #int2 {
+            transition: 4s;
+            span {
+                background: url(../assets/img/banner.jpg) center/cover;
+            }
+        }
+        #int3 {
+            transition: 5s;
+            span {
+                background: url(../assets/img/bg.jpg) center/cover;
+            }
+        }
+        #int4 {
+            transition: 6s;
         }
     }
 }

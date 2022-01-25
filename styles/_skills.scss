@@ -7,9 +7,15 @@
     background: rgb(64, 192, 224);
     box-shadow: 0 1px 10px rgb(26, 23, 23);
 
-    p {
+    span {
+        display: flex;
         margin-top: 10px;
     }
+
+    p {
+        margin-right: 10px;
+    }
+
     .skillsContainer {
         padding: 20px 50px;
 
@@ -24,6 +30,8 @@
            
             border-radius: 50px;     
             box-shadow: 0 1px 10px rgb(26, 23, 23);
+            transform: translateX(250%);
+            transition: 2s;
         }        
     
     }
