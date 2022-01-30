@@ -40,7 +40,7 @@
             grid-template-rows: 20% 1fr 20%;
             text-align: center;
             flex: 1 0 25%;
-            min-width: 100px;
+            min-width: 250px;
             max-width: 250px; 
             margin: 10px;
             background-color: rgb(43, 187, 223);
@@ -48,9 +48,12 @@
             padding: 20px 20px 20px;
             box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
             opacity: 0;
+            gap: 10px;
 
             span {
                 border-radius: 5px;
+                height: 150px;
+                
             }
               
         }
@@ -74,6 +77,9 @@
         }
         #int4 {
             transition: 6s;
+            span {
+                background: url(../assets/img/bggp.jpg) center/cover;
+            }
         }
     }
 }

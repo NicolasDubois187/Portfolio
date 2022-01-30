@@ -293,7 +293,7 @@ header .rightTitle {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 25%;
           flex: 1 0 25%;
-  min-width: 100px;
+  min-width: 250px;
   max-width: 250px;
   margin: 10px;
   background-color: #2bbbdf;
@@ -302,10 +302,12 @@ header .rightTitle {
   -webkit-box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
           box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
   opacity: 0;
+  gap: 10px;
 }
 
 .myWork .integrations > div span {
   border-radius: 5px;
+  height: 150px;
 }
 
 .myWork .integrations #int1 {
@@ -338,6 +340,10 @@ header .rightTitle {
 .myWork .integrations #int4 {
   -webkit-transition: 6s;
   transition: 6s;
+}
+
+.myWork .integrations #int4 span {
+  background: url(../assets/img/bggp.jpg) center/cover;
 }
 
 .contacts {
