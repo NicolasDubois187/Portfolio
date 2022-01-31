@@ -2,6 +2,7 @@
 const form = document.querySelector("form");
 
 window.addEventListener("scroll", () => {
+  
 console.log(window.scrollY);
 
   if (window.scrollY > 400) {
@@ -19,4 +20,9 @@ window.addEventListener("load", () => {
 });
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+});
+logo.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  // location.reload();
 });

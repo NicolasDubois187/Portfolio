@@ -17,8 +17,12 @@
   </head>
   <body>
     <div class="navContainer">
+      <label for="toggle"
+        ><img src="./assets/icons/menuBurger.svg" alt="icone menu burger"
+      /></label>
+      <input type="checkbox" id="toggle" />
       <nav id="nav">
-        <h3>Nicolas DUBOIS</h3>
+        <h3 id="logo">Nicolas DUBOIS</h3>
         <ul>
           <a href="#aboutMe"><li>A Propos</li></a>
           <a href="#skills"><li>Compétences techniques</li></a>
@@ -26,24 +30,22 @@
           <a href="#myWork"><li>Portfolio</li></a>
           <a href="#contact"><li>Contact</li></a>
         </ul>
-        <ul>
+        <ul id="navIcon">
           <li>
             <img src="./assets/icons/linkedin.svg" alt="logo linkedin" />
           </li>
-          <li>
-            <img src="./assets/icons/facebookicon.svg" alt="logo facebook" />
-          </li>
-          <li>
-            <img src="./assets/icons/twittericon.svg" alt="logo twitter" />
-          </li>
-          <li><img src="./assets/icons/gitHub.svg" alt="logo gitHub" /></li>
+          <a href="https://github.com/NicolasDubois187" target="_blank">
+            <li><img src="./assets/icons/gitHub.svg" alt="logo gitHub" /></li>
+          </a>
         </ul>
       </nav>
     </div>
     <header>
       <div class="leftTitle">
         <h1>Nicolas Dubois,<br />Développeur Web</h1>
-        <a href="#"><button>Mon CV</button></a>
+        <a href="./assets/img/CV.pdf" target="_blank"
+          ><button>Mon CV</button></a
+        >
       </div>
       <div class="rightTitle" id="idPicture"></div>
     </header>
@@ -75,7 +77,6 @@
         <h3>COMPETENCES TECHNIQUES</h3>
         <span>
           <p>HTML :</p>
-          <em>2 mois</em>
         </span>
         <div class="progress">
           <div
@@ -89,7 +90,6 @@
         </div>
         <span>
           <p>CSS :</p>
-          <em>1.5 mois</em>
         </span>
         <div class="progress">
           <div
@@ -98,16 +98,28 @@
             aria-valuenow="75"
             aria-valuemin="0"
             aria-valuemax="100"
-            style="width: 50%"
+            style="width: 60%"
           ></div>
         </div>
         <span>
           <p>Javascript :</p>
-          <em>1 mois</em>
         </span>
         <div class="progress">
           <div
             class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+            role="progressbar"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 25%"
+          ></div>
+        </div>
+        <span>
+          <p>Bootstrap</p>
+        </span>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
             role="progressbar"
             aria-valuenow="75"
             aria-valuemin="0"
@@ -150,28 +162,32 @@
         <div class="integration-1" id="int1">
           <h3>Le Resto</h3>
           <span></span>
-          <a href="https://nicolasdubois187.github.io/Resto/"
+          <a href="https://nicolasdubois187.github.io/Resto/" target="_blank"
             ><button>Voir</button></a
           >
         </div>
         <div class="integration-2" id="int2">
           <h3>Run</h3>
           <span></span>
-          <a href="https://nicolasdubois187.github.io/Run/"
+          <a href="https://nicolasdubois187.github.io/Run/" target="_blank"
             ><button>Voir</button></a
           >
         </div>
         <div class="integration-3" id="int3">
           <h3>La Montagne</h3>
           <span></span>
-          <a href="https://nicolasdubois187.github.io/La-Montagne/"
+          <a
+            href="https://nicolasdubois187.github.io/La-Montagne/"
+            target="_blank"
             ><button>Voir</button></a
           >
         </div>
         <div class="integration-4" id="int4">
           <h3>Gaming Campus</h3>
           <span></span>
-          <a href="https://nicolasdubois187.github.io/gaming-campus/"
+          <a
+            href="https://nicolasdubois187.github.io/gaming-campus/"
+            target="_blank"
             ><button>Voir</button></a
           >
         </div>

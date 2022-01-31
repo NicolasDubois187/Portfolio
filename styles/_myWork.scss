@@ -12,8 +12,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background:rgba(64, 192, 224, 0.24);
+        background: linear-gradient(160deg, rgba(2, 0, 36, 0.212) 0%, rgba(64,192,224,0.85) 35%, rgba(69, 125, 136, 0.62) 100%);
         border-radius: 30px;
+        @media (max-width: 350px) {
+            background: none;
+         }
         
 
         img {

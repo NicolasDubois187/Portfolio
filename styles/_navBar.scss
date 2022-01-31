@@ -1,40 +1,115 @@
-nav {
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto 0;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    background: rgb(64, 192, 224);
-    border-radius: 50px;
-    border: 2px solid grey;
-    z-index: 1;
-    
-    h3 {
+.navContainer {
 
-        font-size: 2rem;
+
+    label, #toggle {
+        display: none;
+        
     }
+    @media all and (max-width: 770px) {
+   
+        display: flex;
+        justify-content: right;
 
-    
-    ul {
+    #nav 
+    {
+        display: none;
+        flex-direction: column;
+        background: rgb(64, 192, 224);
+        height: 350px;
+        width: 250px;
+        align-items: flex-start;
+        margin-top: 60px;
+        margin-right: 10px;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+        ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        #navIcon {
+            display: flex;
+            
+        }
+
+    }
+    #nav a {
+        width: 50%;
+    }
+ 
+    label 
+    {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding: 10px;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+
+        img {
+            height: 50px;
+        }
+    }
+    #toggle:checked + #nav {
+        display: flex;
+    }
+    }
+    nav {
         
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto 0;
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        background: rgb(64, 192, 224);
+        border-radius: 50px;
+        border: 2px solid grey;
+        z-index: 1;
         
-            li {
-                color: black;
-                font-size: 1.2rem;
-                margin: auto 10px;
-                cursor: pointer;
-                transition: 0.2s;
-    
-                &:hover {
-                    transform: scale(0.8);
-                    color: rgb(6, 10, 247);
-                }
+        h3 {
+            cursor: pointer;
+            font-size: 2rem;
+            @media (max-width: 906px) {
+                font-size: 1.5rem;
             }
-    }
-}
+            @media (max-width: 855px) {
+                font-size: 1rem;
+            }
+        }
+    
+        
+        ul {
+            
+            display: flex;
+            
+                li {
+                    color: black;
+                    font-size: 1.2rem;
+                    margin: auto 10px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    @media (max-width: 990px) {
+                        font-size: 1rem;
+                    }
+                    @media (max-width: 855px) {
+                        font-size: 0.9rem;
+                    }
+        
+                    &:hover {
+                        transform: scale(0.8);
+                        color: rgb(6, 10, 247);
+                    }
+                }
+                
 
+        }
+    }
+
+}
