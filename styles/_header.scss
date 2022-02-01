@@ -4,15 +4,51 @@ header {
     grid-template-columns: 50% 1fr;
     width: 90%;
     margin: 0 auto;
+    @media (max-width: 770px) {
+        padding-top: 50px;
+    }
+    @media (max-width: 670px) {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 1fr;
+        gap: 40px;
+        grid-template-areas: 
+            "picture"
+            "title"
+            
+        ;
+    
+        .rightTitle {
+            grid-area: picture;
+        }
+        .leftTitle {
+            grid-area: title;
+        }
+        
+    }
 
     .leftTitle {
         
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 1000px) {
+            display: grid;
+        }
+        @media (max-width: 670px) {
+            justify-content: center;
+            text-align: center;
+        }
+        
         
         h1 {
             font-size: 4rem;
+            @media (max-width: 1220px) {
+                font-size: 3rem;
+            }
+            @media (max-width: 395px) {
+                font-size: 2rem;
+            }
+
         }
         button {
             width: 150px;
@@ -45,6 +81,14 @@ header {
         box-shadow: 0 1px 10px rgba(26, 23, 23, 0.836);
         opacity: 0;
         transition: 4s;
+        @media (max-width: 1220px) {
+            width: 250px;
+            height: 250px;
+        }
+        @media (max-width: 395px) {
+            width: 200px;
+            height: 200px;
+        }
            
     }
 }
