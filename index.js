@@ -1,5 +1,8 @@
 
 const form = document.querySelector("form");
+let name1Content;
+let emailContent;
+let messageContent;
 
 window.addEventListener("scroll", () => {
   
@@ -20,6 +23,23 @@ window.addEventListener("load", () => {
 });
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  console.log();
+
+  if (
+    name1Content.length > 1 &&
+    emailContent.length > 1 &&
+    messageContent.length > 1
+  ) {
+    alert("BINGO");
+    name.value = "";
+    email.value = "";
+    message.value = "";
+    
+  } else {
+    alert("Merci de bien renseigner les champs");
+  }
+
 });
 logo.addEventListener("click", () => {
   document.body.scrollTop = 0;
