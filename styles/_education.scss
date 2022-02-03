@@ -7,4 +7,18 @@
     @media (max-width: 600px) {
         grid-template-columns: 100%;
      }
+
+     h3 {
+         font-size: 2rem;
+     }
+
+     h4 {
+         font-family: "font-2";
+         font-size: 1.2rem;
+         font-weight: 900;
+         color: #433838;
+     }
+     p {
+         font-family: "font-2";
+     }
 }

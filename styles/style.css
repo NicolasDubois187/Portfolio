@@ -349,6 +349,10 @@ header .rightTitle {
   line-height: 50px;
 }
 
+.aboutMe h4 {
+  font-style: italic;
+}
+
 .aboutMe p {
   font-family: "font-2";
   font-size: 1.1rem;
@@ -436,6 +440,21 @@ header .rightTitle {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
+}
+
+.experience h3 {
+  font-size: 2rem;
+}
+
+.experience h4 {
+  font-family: "font-2";
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #433838;
+}
+
+.experience p {
+  font-family: "font-2";
 }
 
 .myWork {
