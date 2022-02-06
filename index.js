@@ -17,6 +17,8 @@ console.log(window.scrollY);
       int2.style.opacity = 1;
       int3.style.opacity = 1;
       int4.style.opacity = 1;
+      int5.style.opacity = 1;
+      int6.style.opacity = 1;
       
   }
   else {
@@ -24,6 +26,8 @@ console.log(window.scrollY);
     int2.style.opacity = 0;
     int3.style.opacity = 0;
     int4.style.opacity = 0;
+    int5.style.opacity = 0;
+    int6.style.opacity = 0;
   }
   if (window.scrollY > 250) {
     idPicture.style.opacity = 0;

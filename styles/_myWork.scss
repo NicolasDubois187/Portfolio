@@ -43,8 +43,8 @@
             grid-template-rows: 20% 1fr 20%;
             text-align: center;
             flex: 1 0 25%;
-            min-width: 250px;
-            max-width: 250px; 
+            min-width: 200px;
+            max-width: 200px; 
             margin: 10px;
             background-color: rgb(43, 187, 223);
             border-radius: 8px;
@@ -83,6 +83,18 @@
             transition: 6s;
             span {
                 background: url(../assets/img/bggp.jpg) center/cover;
+            }
+        }
+        #int5 {
+            transition: 7s;
+            span {
+                background: url(../assets/img/banière_.png) center/cover;
+            }
+        }
+        #int6 {
+            transition: 8s;
+            span {
+                background: url(../assets/img/MeetApp2.png) center/cover;
             }
         }
     }
