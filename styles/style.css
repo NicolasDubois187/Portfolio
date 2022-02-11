@@ -29,9 +29,9 @@ html {
 }
 
 body {
-  background: #020024;
-  background: linear-gradient(160deg, rgba(2, 0, 36, 0.212) 0%, rgba(64, 192, 224, 0.85) 35%, rgba(69, 125, 136, 0.62) 100%);
+  background: black;
   font-family: "font-1";
+  color: aliceblue;
 }
 
 footer {
@@ -88,6 +88,7 @@ footer {
   }
   .navContainer #nav ul {
     display: block;
+    text-align: left;
     margin: 0;
     padding: 0;
   }
@@ -112,7 +113,7 @@ footer {
             align-items: center;
     padding: 10px;
     font-size: 40px;
-    color: white;
+    color: aliceblue;
     cursor: pointer;
   }
   .navContainer label img {
@@ -134,19 +135,23 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto 0;
+  text-align: center;
   padding: 20px;
+  margin: auto 0;
   position: fixed;
   width: 100%;
   height: 80px;
   background: linear-gradient(160deg, #5b57a3 0%, #40c0e0 35%, #457d88 100%);
   border-radius: 50px;
-  border: 2px solid grey;
+  border: none;
+  -webkit-box-shadow: 0px 0px 8px 1px white;
+          box-shadow: 0px 0px 8px 1px white;
   z-index: 1;
 }
 
 .navContainer nav h3 {
   cursor: pointer;
+  margin: 0;
   font-size: 2rem;
 }
 
@@ -166,12 +171,17 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
 }
 
 .navContainer nav ul li {
   color: black;
   font-size: 1.2rem;
-  margin: auto 10px;
+  margin: 0 10px;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -192,10 +202,26 @@ footer {
 .navContainer nav ul li:hover {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  color: #060af7;
+  color: #7621c5;
 }
 
-header {
+.navContainer nav #navIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.headerContainer {
+  background: url(../assets/img/smokeEffect.jpg) center/cover;
+  height: 100vh;
+}
+
+.headerContainer header {
   padding-top: 150px;
   display: -ms-grid;
   display: grid;
@@ -206,13 +232,13 @@ header {
 }
 
 @media (max-width: 770px) {
-  header {
+  .headerContainer header {
     padding-top: 50px;
   }
 }
 
 @media (max-width: 670px) {
-  header {
+  .headerContainer header {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     -ms-grid-rows: 50% 1fr;
@@ -220,19 +246,19 @@ header {
     gap: 40px;
         grid-template-areas: "picture" "title";
   }
-  header .rightTitle {
+  .headerContainer header .rightTitle {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: picture;
   }
-  header .leftTitle {
+  .headerContainer header .leftTitle {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: title;
   }
 }
 
-header .leftTitle {
+.headerContainer header .leftTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,14 +271,14 @@ header .leftTitle {
 }
 
 @media (max-width: 1000px) {
-  header .leftTitle {
+  .headerContainer header .leftTitle {
     display: -ms-grid;
     display: grid;
   }
 }
 
 @media (max-width: 670px) {
-  header .leftTitle {
+  .headerContainer header .leftTitle {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -260,68 +286,66 @@ header .leftTitle {
   }
 }
 
-header .leftTitle h1 {
+.headerContainer header .leftTitle h1 {
   font-size: 4rem;
 }
 
 @media (max-width: 1220px) {
-  header .leftTitle h1 {
+  .headerContainer header .leftTitle h1 {
     font-size: 3rem;
   }
 }
 
 @media (max-width: 395px) {
-  header .leftTitle h1 {
+  .headerContainer header .leftTitle h1 {
     font-size: 2rem;
   }
 }
 
-header .leftTitle button {
+.headerContainer header .leftTitle button {
   width: 150px;
   height: 50px;
   font-size: 1.2rem;
   font-weight: 600;
   font-family: "font-2";
-  background: #40c0e0;
+  color: #7621c5;
+  background: linear-gradient(160deg, #5b57a3 0%, #40c0e0 35%, #457d88 100%);
   border-radius: 20px;
   border-style: none;
-  -webkit-box-shadow: 0 1px 10px rgba(26, 23, 23, 0.575);
-          box-shadow: 0 1px 10px rgba(26, 23, 23, 0.575);
+  -webkit-box-shadow: 0px 0px 8px 1px white;
+          box-shadow: 0px 0px 8px 1px white;
   cursor: pointer;
-  -webkit-transform: 0.2s;
-          transform: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-header .leftTitle button:hover {
+.headerContainer header .leftTitle button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  color: #060af7;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
-header .rightTitle {
+.headerContainer header .rightTitle {
   background: url(../assets/img/nDuboisPhoto4.jpg) top/cover;
   width: 300px;
   height: 300px;
   border-radius: 150px;
   margin: 0 auto;
-  -webkit-box-shadow: 0 1px 10px rgba(26, 23, 23, 0.836);
-          box-shadow: 0 1px 10px rgba(26, 23, 23, 0.836);
+  -webkit-box-shadow: 0px 0px 8px 1px white;
+          box-shadow: 0px 0px 8px 1px white;
   opacity: 0;
   -webkit-transition: 4s;
   transition: 4s;
 }
 
 @media (max-width: 1220px) {
-  header .rightTitle {
+  .headerContainer header .rightTitle {
     width: 250px;
     height: 250px;
   }
 }
 
 @media (max-width: 395px) {
-  header .rightTitle {
+  .headerContainer header .rightTitle {
     width: 200px;
     height: 200px;
   }
@@ -357,6 +381,24 @@ header .rightTitle {
 .aboutMe p {
   font-family: "font-2";
   font-size: 1.1rem;
+  padding-bottom: 20px;
+}
+
+.aboutMe h5 {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  color: darkgoldenrod;
+}
+
+.aboutMe h6 {
+  font-family: "font-2";
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #766a6a;
+}
+
+.aboutMe span {
+  font-family: "font-2";
 }
 
 .aboutMe .abilities li {
@@ -372,9 +414,9 @@ header .rightTitle {
   width: 90%;
   margin: 0 auto;
   border-radius: 50px;
-  background: #40c0e0;
-  -webkit-box-shadow: 0 1px 10px #1a1717;
-          box-shadow: 0 1px 10px #1a1717;
+  background: linear-gradient(160deg, rgba(2, 0, 36, 0.212) 0%, rgba(64, 192, 224, 0.85) 35%, rgba(69, 125, 136, 0.62) 100%);
+  -webkit-box-shadow: 0px 0px 8px 1px white;
+          box-shadow: 0px 0px 8px 1px white;
 }
 
 @media (max-width: 770px) {
@@ -383,6 +425,14 @@ header .rightTitle {
         grid-template-columns: 100%;
     padding-bottom: 10px;
   }
+}
+
+.skills h3 {
+  letter-spacing: 3px;
+}
+
+.skills em {
+  color: darkgoldenrod;
 }
 
 .skills span {
@@ -394,6 +444,7 @@ header .rightTitle {
 
 .skills p {
   margin-right: 10px;
+  font-family: font-2;
 }
 
 .skills .skillsContainer {
@@ -407,8 +458,8 @@ header .rightTitle {
 
 .skills .logo img {
   border-radius: 50px;
-  -webkit-box-shadow: 0 1px 10px #1a1717;
-          box-shadow: 0 1px 10px #1a1717;
+  -webkit-box-shadow: 0px 0px 8px 1px white;
+          box-shadow: 0px 0px 8px 1px white;
   -webkit-transform: translateX(250%);
           transform: translateX(250%);
   -webkit-transition: 2s;
@@ -427,37 +478,6 @@ header .rightTitle {
   }
 }
 
-.experience {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 1fr;
-      grid-template-columns: 40% 1fr;
-  max-width: 90%;
-  margin: 50px auto;
-}
-
-@media (max-width: 600px) {
-  .experience {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
-}
-
-.experience h3 {
-  font-size: 2rem;
-}
-
-.experience h4 {
-  font-family: "font-2";
-  font-size: 1.2rem;
-  font-weight: 900;
-  color: #433838;
-}
-
-.experience p {
-  font-family: "font-2";
-}
-
 .myWork {
   max-width: 90%;
   margin: 50px auto;
@@ -466,6 +486,7 @@ header .rightTitle {
 .myWork h4 {
   text-align: center;
   font-size: 3rem;
+  letter-spacing: 3px;
 }
 
 .myWork .integrations {
@@ -479,6 +500,8 @@ header .rightTitle {
       -ms-flex-pack: center;
           justify-content: center;
   background: linear-gradient(160deg, rgba(2, 0, 36, 0.212) 0%, rgba(64, 192, 224, 0.85) 35%, rgba(69, 125, 136, 0.62) 100%);
+  -webkit-box-shadow: 0px 0px 8px 1px white;
+          box-shadow: 0px 0px 8px 1px white;
   border-radius: 30px;
 }
 
@@ -486,6 +509,19 @@ header .rightTitle {
   .myWork .integrations {
     background: none;
   }
+}
+
+.myWork .integrations h3 {
+  margin: 0;
+}
+
+.myWork .integrations ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-family: font-2;
+  color: darkgoldenrod;
+  line-height: 15px;
 }
 
 .myWork .integrations img {
@@ -499,35 +535,35 @@ header .rightTitle {
   padding: 5px 20px;
   border-radius: 10px;
   border: none;
-  -webkit-box-shadow: 0 1px 10px rgba(53, 52, 52, 0.411);
-          box-shadow: 0 1px 10px rgba(53, 52, 52, 0.411);
+  -webkit-box-shadow: 0px 0px 3px 0px white;
+          box-shadow: 0px 0px 3px 0px white;
   background: rgba(245, 245, 245, 0.74);
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 .myWork .integrations button:hover {
-  background: black;
-  color: whitesmoke;
+  background: linear-gradient(160deg, #5b57a3 0%, #40c0e0 35%, #457d88 100%);
+  color: #7621c5;
 }
 
 .myWork .integrations > div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 20% 1fr 20%;
-      grid-template-rows: 20% 1fr 20%;
+  -ms-grid-rows: 10% 20% 1fr;
+      grid-template-rows: 10% 20% 1fr;
   text-align: center;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 25%;
           flex: 1 0 25%;
-  min-width: 200px;
-  max-width: 200px;
+  min-width: 250px;
+  max-width: 250px;
   margin: 10px;
-  background-color: #2bbbdf;
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 8px 1px white;
+          box-shadow: 0px 0px 8px 1px white;
   border-radius: 8px;
   padding: 20px 20px 20px;
-  -webkit-box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
-          box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
   opacity: 0;
   gap: 10px;
 }
@@ -552,7 +588,7 @@ header .rightTitle {
 }
 
 .myWork .integrations #int2 span {
-  background: url(../assets/img/banner.jpg) center/cover;
+  background: url(../assets/img/bg.jpg) center/cover;
 }
 
 .myWork .integrations #int3 {
@@ -561,7 +597,7 @@ header .rightTitle {
 }
 
 .myWork .integrations #int3 span {
-  background: url(../assets/img/bg.jpg) center/cover;
+  background: url(../assets/img/banière_.png) center/cover;
 }
 
 .myWork .integrations #int4 {
@@ -570,30 +606,16 @@ header .rightTitle {
 }
 
 .myWork .integrations #int4 span {
-  background: url(../assets/img/bggp.jpg) center/cover;
-}
-
-.myWork .integrations #int5 {
-  -webkit-transition: 7s;
-  transition: 7s;
-}
-
-.myWork .integrations #int5 span {
-  background: url(../assets/img/banière_.png) center/cover;
-}
-
-.myWork .integrations #int6 {
-  -webkit-transition: 8s;
-  transition: 8s;
-}
-
-.myWork .integrations #int6 span {
   background: url(../assets/img/MeetApp2.png) center/cover;
 }
 
 .contacts {
   max-width: 90%;
   margin: 50px auto;
+}
+
+.contacts h3 {
+  letter-spacing: 3px;
 }
 
 .contacts form .formContainer {

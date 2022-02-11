@@ -4,11 +4,17 @@
     width: 90%;
     margin: 0 auto;
     border-radius: 50px;
-    background: rgb(64, 192, 224);
-    box-shadow: 0 1px 10px rgb(26, 23, 23);
+    background: $color-3;
+    box-shadow: 0px 0px 8px 1px white;
     @media (max-width: 770px) {
         grid-template-columns: 100%;
         padding-bottom: 10px;
+    }
+    h3 {
+        letter-spacing: 3px;
+    }
+    em {
+        color: $color-5;
     }
 
     span {
@@ -18,6 +24,7 @@
 
     p {
         margin-right: 10px;
+        font-family: font-2;
     }
 
     .skillsContainer {
@@ -33,7 +40,7 @@
         img {
            
             border-radius: 50px;     
-            box-shadow: 0 1px 10px rgb(26, 23, 23);
+            box-shadow: 0px 0px 8px 1px white;
             transform: translateX(250%);
             transition: 2s;
             @media (max-width: 350px) {

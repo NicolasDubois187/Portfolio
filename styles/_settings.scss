@@ -6,6 +6,14 @@
     font-family: "font-2";
     src: url(../assets/fonts/Roboto-Regular.ttf);
 }
+$color-1: linear-gradient(160deg, rgba(2, 0, 36, 0.78) 0%, rgba(64,192,224,1) 35%, rgba(69, 125, 136, 1) 100%);
+$color-2: linear-gradient(160deg, rgb(91, 87, 163) 0%, rgba(64,192,224,1) 35%, rgba(69, 125, 136, 1) 100%);
+$color-3: linear-gradient(160deg, rgba(2, 0, 36, 0.212) 0%, rgba(64,192,224,0.85) 35%, rgba(69, 125, 136, 0.62) 100%);
+$color-4: aliceblue;
+$color-5: darkgoldenrod;
+$color-6: #7621c5;
+
+
 
 * {
     margin: 0;
@@ -22,9 +30,10 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(160deg, rgba(2, 0, 36, 0.212) 0%, rgba(64,192,224,0.85) 35%, rgba(69, 125, 136, 0.62) 100%);
+    background: rgb(0,0,0);
+   
     font-family: "font-1";
+    color: aliceblue;
 
 }
 footer {
