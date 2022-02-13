@@ -4,32 +4,30 @@ const form = document.querySelector("form");
 
 window.addEventListener("scroll", () => {
   
-console.log(window.scrollY);
 
-  if (window.scrollY > 350) {
-    logoSkills.style.transform = "none";
+  if (window.scrollY > 750) {
+    logoSkillsPic.style.transform = "translateX(0px)";
   }
   else {
-    logoSkills.style.transform = "translateX(250%)";
+    logoSkillsPic.style.transform = "translateX(1000px)";
   }
-  if (window.scrollY > 1300) {
+
+  if (window.scrollY > 1500) {
       int1.style.opacity = 1;
       int2.style.opacity = 1;
       int3.style.opacity = 1;
       int4.style.opacity = 1;
-      int5.style.opacity = 1;
-      int6.style.opacity = 1;
+    
       
   }
   else {
-    int1.style.opacity = 0;
-    int2.style.opacity = 0;
-    int3.style.opacity = 0;
-    int4.style.opacity = 0;
-    int5.style.opacity = 0;
-    int6.style.opacity = 0;
+    int1.style.opacity = 0.5;
+    int2.style.opacity = 0.5;
+    int3.style.opacity = 0.5;
+    int4.style.opacity = 0.5;
+ 
   }
-  if (window.scrollY > 250) {
+  if (window.scrollY > 150) {
     idPicture.style.opacity = 0;
   }
   else {
@@ -38,6 +36,7 @@ console.log(window.scrollY);
 });
 window.addEventListener("load", () => {
     idPicture.style.opacity = 1;
+    
 });
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -65,7 +64,7 @@ form.addEventListener("submit", (e) => {
   }
 
 });
-logo.addEventListener("click", () => {
+logoNav.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
   

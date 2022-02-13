@@ -1,105 +1,150 @@
 .headerContainer {
-
     
-        background: url(../assets/img/smokeEffect.jpg) center/cover ;
-        height: 100vh;
-    
+    @keyframes animatedBackground {
+        from {
+          background-position: 0 100%;
+        }
+        to {
+          background-position: 100% 0;
+        }
+    }
+    background: url(../assets/img/smokeEffect1.jpg), url(../assets/img/smokeEffect2.jpg);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 20s linear infinite alternate;
+    height: 100vh;
+    position: relative;
 
+    &::after {
+
+        content: "";
+        position: absolute;
+        border-radius: 10px;
+        height: 5px;
+        width: 100%;
+        background: black;
+        bottom: 0;
+        
+       
+        box-shadow:
+0 0 8px #fff,
+inset 0 0 8px #fff,
+0 0 16px #c6e2ff,
+inset 0 0 16px #c6e2ff,
+0 0 32px #c6e2ff,
+inset 0 0 32px #c6e2ff;
+
+    }
+
+    @media (max-width: 1300px) {
+        height: 70vh;
+    }
+    
+    @media (max-width: 670px) {
+        height: 90vh;
+    }
+    
+    
     header {
         
         
-    padding-top: 150px;
-    display: grid;
-    grid-template-columns: 50% 1fr;
-    width: 90%;
-    margin: 0 auto;
-    @media (max-width: 770px) {
-        padding-top: 50px;
-    }
-    @media (max-width: 670px) {
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 1fr;
-        gap: 40px;
-        grid-template-areas: 
-        "picture"
-        "title"
-        
-        ;
-        
-        .rightTitle {
-            grid-area: picture;
-        }
-        .leftTitle {
-            grid-area: title;
-        }
-        
-    }
-    
-    .leftTitle {
-        
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @media (max-width: 1000px) {
+            padding-top: 150px;
             display: grid;
-        }
-        @media (max-width: 670px) {
-            justify-content: center;
-            text-align: center;
-        }
-        
-        
-        h1 {
-            font-size: 4rem;
-            @media (max-width: 1220px) {
-                font-size: 3rem;
+            grid-template-columns: 50% 1fr;
+            width: 90%;
+            margin: 0 auto;
+            @media (max-width: 770px) {
+                padding-top: 50px;
             }
-            @media (max-width: 395px) {
-                font-size: 2rem;
+            @media (max-width: 670px) {
+                grid-template-columns: 100%;
+                grid-template-rows: 50% 1fr;
+                gap: 40px;
+                grid-template-areas: 
+                "picture"
+                "title"
+                
+                ;
+                
+                .rightTitle {
+                    grid-area: picture;
+                }
+                .leftTitle {
+                    grid-area: title;
+                }
+                
             }
             
-        }
-        button {
-            width: 150px;
-            height: 50px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            font-family: "font-2";
-            color: $color-6;
-            background: $color-2;
-            border-radius: 20px;
-            border-style: none;
-            box-shadow: 0px 0px 8px 1px white;
-            cursor: pointer;
-            transition: 0.2s;
+                .leftTitle {
+                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @media (max-width: 1000px) {
+                    display: grid;
+                }
+                @media (max-width: 670px) {
+                    justify-content: center;
+                    text-align: center;
+                }
+                
+                
+                    h1 {
+                    font-size: 4rem;
+                    @media (max-width: 1220px) {
+                        font-size: 3rem;
+                    }
+                    @media (max-width: 395px) {
+                        font-size: 2rem;
+                    }
             
-        }
-        button:hover {
-            transform: scale(1.2);
+                    }
+                     button {
+                    width: 150px;
+                    height: 50px;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    font-family: "font-2";
+                    color: $color-6;
+                    background: $color-2;
+                    border-radius: 50px;
+                    border-style: none;
+                    box-shadow: 0px 0px 8px 1px white;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    
+                    }
+                    button:hover {
+                    transform: scale(1.2);
             
-        }
+                    }
         
-    }
-    
-    .rightTitle {
-        
-        background: url(../assets/img/nDuboisPhoto4.jpg) top/cover;
-        width: 300px;
-        height: 300px;
-        border-radius: 150px;
-        margin: 0 auto;
-        box-shadow: 0px 0px 8px 1px white;
-        opacity: 0;
-        transition: 4s;
-        @media (max-width: 1220px) {
-            width: 250px;
-            height: 250px;
-        }
-        @media (max-width: 395px) {
-            width: 200px;
-            height: 200px;
-        }
-        
+                }
+                .rightTitle {
+                    
+                    background: url(../assets/img/nDuboisPhoto4.jpg) top/cover;
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 150px;
+                    margin: 0 auto;
+                    box-shadow: 0px 0px 8px 1px white;
+                    opacity: 0;
+                    transition: 4s;
+                    @media (max-width: 1220px) {
+                        width: 250px;
+                        height: 250px;
+                    }
+                    @media (max-width: 395px) {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
     }
 }
-}
+        
+
+
+
+
+
+

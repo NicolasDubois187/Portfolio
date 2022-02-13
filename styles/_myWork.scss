@@ -6,6 +6,11 @@
         text-align: center;
         font-size: 3rem;
         letter-spacing: 3px;
+
+        @media (max-width: 305px) {
+            font-size: 2rem;
+            
+         }
         
     }
     .integrations {
@@ -15,9 +20,11 @@
         justify-content: center;
         background: linear-gradient(160deg, rgba(2, 0, 36, 0.212) 0%, rgba(64,192,224,0.85) 35%, rgba(69, 125, 136, 0.62) 100%);
         box-shadow: 0px 0px 8px 1px white;
-        border-radius: 30px;
+        border-radius: 50px;
         @media (max-width: 350px) {
             background: none;
+            box-shadow: none;
+            
          }
          h3 {
              margin: 0;
@@ -37,8 +44,7 @@
             border-radius: 5px;
         }
         button {
-            margin-top: 20px;
-            margin-bottom: 20px;
+            
             padding: 5px 20px;
             border-radius: 10px;
             border: none;
@@ -57,15 +63,21 @@
             text-align: center;
             flex: 1 0 25%;
             min-width: 250px;
-            max-width: 250px; 
+            max-width: 250px;
+            min-height: 350px;
             margin: 10px;
             background-color: black;
             box-shadow: 0px 0px 8px 1px white;
-            border-radius: 8px;
+            border-radius: 50px;
             padding: 20px 20px 20px;
             
             opacity: 0;
             gap: 10px;
+
+            @media (max-width: 305px) {
+                min-width: 200px;
+                
+             }
 
             span {
                 border-radius: 5px;
@@ -75,7 +87,7 @@
               
         }
         #int1 {
-            transition: 3s;
+            transition: 4s;
             span {
                 background: url(../assets/img/bg-slider-06.jpg) center/cover;
             }
@@ -83,20 +95,20 @@
         }
    
         #int2 {
-            transition: 4s;
+            transition: 5s;
             span {
                 background: url(../assets/img/bg.jpg) center/cover;
             }
         }
       
         #int3 {
-            transition: 5s;
+            transition: 6s;
             span {
                 background: url(../assets/img/banière_.png) center/cover;
             }
         }
         #int4 {
-            transition: 6s;
+            transition: 7s;
             span {
                 background: url(../assets/img/MeetApp2.png) center/cover;
             }

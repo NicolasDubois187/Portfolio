@@ -34,8 +34,11 @@ body {
    
     font-family: "font-1";
     color: aliceblue;
+    overflow-x: hidden;
+    position: relative;
 
 }
+
 footer {
     text-align: center;
     margin-bottom: 20px;
