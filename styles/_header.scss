@@ -100,14 +100,14 @@ inset 0 0 32px #c6e2ff;
             
                     }
                      button {
-                    width: 150px;
-                    height: 50px;
+                    width: 80px;
+                    height: 80px;
                     font-size: 1.2rem;
                     font-weight: 600;
                     font-family: "font-2";
-                    color: $color-6;
-                    background: $color-2;
-                    border-radius: 50px;
+                    color: $color-4;
+                    background: none;
+                    border-radius: 150px;
                     border-style: none;
                     box-shadow: 0px 0px 8px 1px white;
                     cursor: pointer;
@@ -116,7 +116,10 @@ inset 0 0 32px #c6e2ff;
                     }
                     button:hover {
                     transform: scale(1.2);
-            
+                    }
+                    img {
+                        transform: scale(2);
+                       
                     }
         
                 }

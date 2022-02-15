@@ -81,11 +81,12 @@ footer {
   }
   .navContainer #nav {
     display: none;
+    border-radius: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: linear-gradient(160deg, rgba(2, 0, 36, 0.78) 0%, #40c0e0 35%, #457d88 100%);
+    background: black;
     height: 250px;
     width: 200px;
     -webkit-box-align: start;
@@ -148,12 +149,11 @@ footer {
           align-items: center;
   text-align: center;
   padding: 20px;
-  margin: 2px auto;
+  margin: 0 auto;
   position: fixed;
-  width: 99%;
+  width: 100%;
   height: 60px;
-  background: linear-gradient(160deg, #5b57a3 0%, #40c0e0 35%, #457d88 100%);
-  border-radius: 50px;
+  background: black;
   border: none;
   -webkit-box-shadow: 0px 0px 8px 1px white;
           box-shadow: 0px 0px 8px 1px white;
@@ -166,6 +166,7 @@ footer {
   cursor: pointer;
   margin: 0;
   font-size: 2rem;
+  color: darkturquoise;
 }
 
 @media (max-width: 906px) {
@@ -192,7 +193,7 @@ footer {
 }
 
 .navContainer nav ul li {
-  color: black;
+  color: aliceblue;
   font-size: 1.2rem;
   margin: 0 10px;
   cursor: pointer;
@@ -215,7 +216,6 @@ footer {
 .navContainer nav ul li:hover {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  color: #7621c5;
 }
 
 .navContainer nav #navIcon {
@@ -363,14 +363,14 @@ footer {
 }
 
 .headerContainer header .leftTitle button {
-  width: 150px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   font-size: 1.2rem;
   font-weight: 600;
   font-family: "font-2";
-  color: #7621c5;
-  background: linear-gradient(160deg, #5b57a3 0%, #40c0e0 35%, #457d88 100%);
-  border-radius: 50px;
+  color: aliceblue;
+  background: none;
+  border-radius: 150px;
   border-style: none;
   -webkit-box-shadow: 0px 0px 8px 1px white;
           box-shadow: 0px 0px 8px 1px white;
@@ -382,6 +382,11 @@ footer {
 .headerContainer header .leftTitle button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.headerContainer header .leftTitle img {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .headerContainer header .rightTitle {
@@ -464,6 +469,11 @@ footer {
 .aboutMe .abilities li {
   font-family: "font-2";
   font-size: 1.1 rem;
+  line-height: 35px;
+}
+
+.aboutMe .abilities li img {
+  margin-right: 10px;
 }
 
 .skills {
@@ -609,8 +619,7 @@ footer {
 }
 
 .myWork .integrations button:hover {
-  background: linear-gradient(160deg, #5b57a3 0%, #40c0e0 35%, #457d88 100%);
-  color: #7621c5;
+  background: linear-gradient(160deg, rgba(2, 0, 36, 0.78) 0%, #40c0e0 35%, #457d88 100%);
 }
 
 .myWork .integrations > div {
@@ -647,8 +656,8 @@ footer {
 }
 
 .myWork .integrations #int1 {
-  -webkit-transition: 4s;
-  transition: 4s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .myWork .integrations #int1 span {
@@ -656,8 +665,8 @@ footer {
 }
 
 .myWork .integrations #int2 {
-  -webkit-transition: 5s;
-  transition: 5s;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .myWork .integrations #int2 span {
@@ -665,8 +674,8 @@ footer {
 }
 
 .myWork .integrations #int3 {
-  -webkit-transition: 6s;
-  transition: 6s;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
 .myWork .integrations #int3 span {
@@ -674,8 +683,8 @@ footer {
 }
 
 .myWork .integrations #int4 {
-  -webkit-transition: 7s;
-  transition: 7s;
+  -webkit-transition: 4s;
+  transition: 4s;
 }
 
 .myWork .integrations #int4 span {
@@ -683,12 +692,31 @@ footer {
 }
 
 .contacts {
+  background: url(../assets/img/smokeEffect2.jpg);
+  background-position: 0px 0px;
+  background-repeat: repeat-y;
+  -webkit-animation: animatedBackground 20s linear infinite alternate;
+          animation: animatedBackground 20s linear infinite alternate;
+  position: relative;
   max-width: 90%;
   margin: 50px auto;
 }
 
+@keyframes animatedBackground {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
 .contacts h3 {
   letter-spacing: 3px;
+}
+
+.contacts form {
+  position: relative;
 }
 
 .contacts form .formContainer {
@@ -746,7 +774,7 @@ footer {
   padding: 5px;
   resize: none;
   background: rgba(245, 245, 245, 0.836);
-  border: 0.5px solid #40c0e0;
+  border: 0.5px solid darkturquoise;
   -webkit-box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
           box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
 }
@@ -756,15 +784,15 @@ footer {
   border-radius: 50px;
   margin: 20px auto;
   border: none;
-  background: linear-gradient(160deg, #5b57a3 0%, #40c0e0 35%, #457d88 100%);
-  color: #7621c5;
+  background: linear-gradient(160deg, rgba(2, 0, 36, 0.212) 0%, rgba(64, 192, 224, 0.85) 35%, rgba(69, 125, 136, 0.62) 100%);
+  color: black;
   font-weight: 600;
   -webkit-box-shadow: 0px 0px 8px 1px white;
           box-shadow: 0px 0px 8px 1px white;
 }
 
 .contacts form .formContainer input[type="submit"]:hover {
-  background-color: rgba(45, 155, 182, 0.966);
+  background-color: aliceblue;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }

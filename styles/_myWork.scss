@@ -18,7 +18,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background: linear-gradient(160deg, rgba(2, 0, 36, 0.212) 0%, rgba(64,192,224,0.85) 35%, rgba(69, 125, 136, 0.62) 100%);
+        background: $color-3;
         box-shadow: 0px 0px 8px 1px white;
         border-radius: 50px;
         @media (max-width: 350px) {
@@ -53,8 +53,8 @@
             transition: 0.2s;
 
             &:hover {
-                background: $color-2;
-                color: $color-6;
+                background: $color-1;
+            
             }
         }
         & > div {
@@ -87,7 +87,7 @@
               
         }
         #int1 {
-            transition: 4s;
+            transition: 1s;
             span {
                 background: url(../assets/img/bg-slider-06.jpg) center/cover;
             }
@@ -95,20 +95,20 @@
         }
    
         #int2 {
-            transition: 5s;
+            transition: 2s;
             span {
                 background: url(../assets/img/bg.jpg) center/cover;
             }
         }
       
         #int3 {
-            transition: 6s;
+            transition: 3s;
             span {
                 background: url(../assets/img/banière_.png) center/cover;
             }
         }
         #int4 {
-            transition: 7s;
+            transition: 4s;
             span {
                 background: url(../assets/img/MeetApp2.png) center/cover;
             }

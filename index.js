@@ -21,10 +21,10 @@ window.addEventListener("scroll", () => {
       
   }
   else {
-    int1.style.opacity = 0.5;
-    int2.style.opacity = 0.5;
-    int3.style.opacity = 0.5;
-    int4.style.opacity = 0.5;
+    int1.style.opacity = 0;
+    int2.style.opacity = 0;
+    int3.style.opacity = 0;
+    int4.style.opacity = 0;
  
   }
   if (window.scrollY > 150) {
