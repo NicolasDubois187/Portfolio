@@ -233,9 +233,9 @@ footer {
   background: url(../assets/img/smokeEffect1.jpg), url(../assets/img/smokeEffect2.jpg);
   background-position: 0px 0px;
   background-repeat: repeat-x;
-  -webkit-animation: animatedBackground 20s linear infinite alternate;
-          animation: animatedBackground 20s linear infinite alternate;
-  height: 100vh;
+  -webkit-animation: animatedBackground 15s linear infinite alternate;
+          animation: animatedBackground 15s linear infinite alternate;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -271,13 +271,13 @@ footer {
 
 @media (max-width: 1300px) {
   .headerContainer {
-    height: 70vh;
+    min-height: 70vh;
   }
 }
 
 @media (max-width: 670px) {
   .headerContainer {
-    height: 90vh;
+    min-height: 70vh;
   }
 }
 
@@ -285,15 +285,27 @@ footer {
   padding-top: 150px;
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-columns: 50% 1fr;
       grid-template-columns: 50% 1fr;
   width: 90%;
   margin: 0 auto;
+  min-height: 70vh;
+}
+
+@media (max-width: 1300px) {
+  .headerContainer header {
+    padding-top: 50px;
+    min-height: 60vh;
+  }
 }
 
 @media (max-width: 770px) {
   .headerContainer header {
     padding-top: 50px;
+    min-height: 50vh;
   }
 }
 
@@ -692,12 +704,11 @@ footer {
 }
 
 .contacts {
-  background: url(../assets/img/smokeEffect2.jpg);
+  background: url(../assets/img/smokeEffect2.jpg) right/cover;
   background-position: 0px 0px;
   background-repeat: repeat-y;
-  -webkit-animation: animatedBackground 20s linear infinite alternate;
-          animation: animatedBackground 20s linear infinite alternate;
-  position: relative;
+  -webkit-animation: animatedBackground 30s linear infinite alternate;
+          animation: animatedBackground 30s linear infinite alternate;
   max-width: 90%;
   margin: 50px auto;
 }

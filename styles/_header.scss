@@ -1,4 +1,5 @@
 .headerContainer {
+
     
     @keyframes animatedBackground {
         from {
@@ -11,8 +12,8 @@
     background: url(../assets/img/smokeEffect1.jpg), url(../assets/img/smokeEffect2.jpg);
     background-position: 0px 0px;
     background-repeat: repeat-x;
-    animation: animatedBackground 20s linear infinite alternate;
-    height: 100vh;
+    animation: animatedBackground 15s linear infinite alternate;
+    min-height: 100vh;
     position: relative;
 
     &::after {
@@ -37,24 +38,31 @@ inset 0 0 32px #c6e2ff;
     }
 
     @media (max-width: 1300px) {
-        height: 70vh;
+        min-height: 70vh;
     }
     
     @media (max-width: 670px) {
-        height: 90vh;
+        min-height: 70vh;
     }
     
     
     header {
         
-        
+
             padding-top: 150px;
             display: grid;
+            align-items: center;
             grid-template-columns: 50% 1fr;
             width: 90%;
             margin: 0 auto;
+            min-height: 70vh;
+            @media (max-width: 1300px) {
+                padding-top: 50px;
+                min-height: 60vh;
+            }
             @media (max-width: 770px) {
                 padding-top: 50px;
+                min-height: 50vh;
             }
             @media (max-width: 670px) {
                 grid-template-columns: 100%;

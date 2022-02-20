@@ -9,11 +9,10 @@
         }
     }
 
-    background: url(../assets/img/smokeEffect2.jpg);
+    background: url(../assets/img/smokeEffect2.jpg) right/cover;
     background-position: 0px 0px;
     background-repeat: repeat-y;
-    animation: animatedBackground 20s linear infinite alternate;
-    position: relative;
+    animation: animatedBackground 30s linear infinite alternate;
     max-width: 90%;
     margin: 50px auto;
 
