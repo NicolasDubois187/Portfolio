@@ -277,7 +277,19 @@ footer {
 
 @media (max-width: 670px) {
   .headerContainer {
-    min-height: 70vh;
+    min-height: 90vh;
+  }
+}
+
+@media (max-width: 395px) {
+  .headerContainer {
+    min-height: 80vh;
+  }
+}
+
+@media (max-width: 270px) {
+  .headerContainer {
+    min-height: 90vh;
   }
 }
 

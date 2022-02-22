@@ -42,7 +42,13 @@ inset 0 0 32px #c6e2ff;
     }
     
     @media (max-width: 670px) {
-        min-height: 70vh;
+        min-height: 90vh;
+    }
+    @media (max-width: 395px) {
+        min-height: 80vh;
+    }
+    @media (max-width: 270px) {
+        min-height: 90vh;
     }
     
     
