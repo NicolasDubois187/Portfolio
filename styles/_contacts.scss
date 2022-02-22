@@ -1,5 +1,6 @@
 .contacts {
 
+    
     @keyframes animatedBackground {
         from {
           background-position: 100% 0;
@@ -13,6 +14,7 @@
     background-position: 0px 0px;
     background-repeat: repeat-y;
     animation: animatedBackground 30s linear infinite alternate;
+    min-height: 60vh;
     max-width: 90%;
     margin: 50px auto;
 
@@ -21,69 +23,40 @@
     h3 {
         letter-spacing: 3px;
     }
+    .contactContainer {
 
-    form {
-
-        position: relative;
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+            
+       img {
     
-        .formContainer {
-            display: grid;
-            max-width: 30%;
-            margin: 10px auto;
+        
+            min-width: 200px;
+            margin: 10px;
+            border-radius: 150px;
+            box-shadow: 0px 0px 8px 1px white;
+            opacity: 0;
+            transform: translateY(500px);
 
-            @media (max-width: 1200px) {
-                max-width: 40%;
+            @media (max-width: 770px) {
+                min-width: 150Px;
             }
-            @media (max-width: 1000px) {
-                max-width: 50%;
+            @media (max-width: 395px) {
+                min-width: 100Px;
             }
-            @media (max-width: 800px) {
-                max-width: 60%;
-            }
-            @media (max-width: 600px) {
-                max-width: 70%;
-            }
-            @media (max-width: 450px) {
-                max-width: 80%;
-            }
-            
-            label {
-                margin: 10px;
-            }
-            
-            input {
-                border-radius: 25px;
-                padding: 5px;
-                background: rgba(245, 245, 245, 0.836);
-                border: 0.5px solid rgb(64, 192, 224);
-                box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
-            }
-            textarea {
-                border-radius: 25px;
-                padding: 5px;
-                resize: none;
-                background: rgba(245, 245, 245, 0.836);
-                border: 0.5px solid darkturquoise;
-                box-shadow: 0 1px 10px rgba(53, 52, 52, 0.562);
-            }
-            input[type="submit"] {
-                width: 50%;
-                border-radius: 50px;
-                margin: 20px auto;
-                border: none;
-                background: $color-3;
-                color: black;
-                font-weight: 600;
-                box-shadow: 0px 0px 8px 1px white;
-                
-                &:hover {
-                    background-color: $color-4;
-                    transform: scale(1.1);
-                }
-            }
+                    
+          
+        }
+        #linkedin {
+            transition: 0.5s;
+        }
+        #github {
+            transition: 1s;
+        }
+        #mail {
+            transition: 1.5s;
         }
 
-      
     }
-  
 }
