@@ -316,6 +316,7 @@ footer {
 
 @media (max-width: 770px) {
   .headerContainer header {
+    padding-top: 20px;
     min-height: 50vh;
   }
 }
