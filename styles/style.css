@@ -288,6 +288,12 @@ footer {
   }
 }
 
+@media (max-width: 450px) {
+  .headerContainer {
+    min-height: 90vh;
+  }
+}
+
 @media (max-width: 395px) {
   .headerContainer {
     -ms-grid-rows: 10% 1fr;
