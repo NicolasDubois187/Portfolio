@@ -15,6 +15,8 @@
     animation: animatedBackground 40s linear infinite alternate;
     min-height: 100vh;
     position: relative;
+    display: grid;
+    
 
     &::after {
 
@@ -38,47 +40,54 @@ inset 0 0 32px #c6e2ff;
     }
 
     @media (max-width: 1300px) {
-        min-height: 70vh;
+        min-height: 80vh;
     }
     
+    @media (max-width: 770px) {
+        grid-template-rows: 25% 1fr;
+    }
     @media (max-width: 670px) {
+        grid-template-rows: 15% 1fr;
         min-height: 90vh;
     }
     @media (max-width: 395px) {
-        min-height: 80vh;
+        grid-template-rows: 10% 1fr;
+        min-height: 70vh;
     }
-    @media (max-width: 270px) {
-        min-height: 90vh;
-    }
+    // @media (max-width: 270px) {
+    //     min-height: 90vh;
+    // }
     
     
     header {
         
 
-            padding-top: 150px;
+            // padding-top: 150px;
             display: grid;
             align-items: center;
+            align-content: space-between;
             grid-template-columns: 50% 1fr;
             width: 90%;
             margin: 0 auto;
-            min-height: 70vh;
-            @media (max-width: 1300px) {
-                padding-top: 50px;
-                min-height: 60vh;
-            }
-            @media (max-width: 770px) {
-                padding-top: 20px;
-                min-height: 50vh;
-            }
+            gap: 20px;
+            // min-height: 50vh;
+            // @media (max-width: 1300px) {
+            //     // padding-top: 50px;
+            //     // align-content: center;
+            //     // min-height: 60vh;
+            // }
+            // @media (max-width: 770px) {
+            //     // align-content: space-between;
+            //     // padding-top: 0;
+            //     // min-height: 50vh;
+            // }
             @media (max-width: 670px) {
+                
                 grid-template-columns: 100%;
-                grid-template-rows: 50% 1fr;
-                gap: 40px;
+                grid-template-rows: 50% 1fr; 
                 grid-template-areas: 
                 "picture"
-                "title"
-                
-                ;
+                "title";
                 
                 .rightTitle {
                     grid-area: picture;
@@ -87,6 +96,9 @@ inset 0 0 32px #c6e2ff;
                     grid-area: title;
                 }
                 
+            }
+            @media (max-width: 395px) {
+                gap: 0;
             }
             
                 .leftTitle {
@@ -116,6 +128,7 @@ inset 0 0 32px #c6e2ff;
                      button {
                     width: 80px;
                     height: 80px;
+                    margin: 20px;
                     font-size: 1.2rem;
                     font-weight: 600;
                     font-family: "font-2";

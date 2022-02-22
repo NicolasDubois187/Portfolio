@@ -78,6 +78,9 @@ footer {
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .navContainer #nav {
     display: none;
@@ -237,6 +240,8 @@ footer {
           animation: animatedBackground 40s linear infinite alternate;
   min-height: 100vh;
   position: relative;
+  display: -ms-grid;
+  display: grid;
 }
 
 @-webkit-keyframes animatedBackground {
@@ -271,54 +276,46 @@ footer {
 
 @media (max-width: 1300px) {
   .headerContainer {
-    min-height: 70vh;
+    min-height: 80vh;
+  }
+}
+
+@media (max-width: 770px) {
+  .headerContainer {
+    -ms-grid-rows: 25% 1fr;
+        grid-template-rows: 25% 1fr;
   }
 }
 
 @media (max-width: 670px) {
   .headerContainer {
+    -ms-grid-rows: 15% 1fr;
+        grid-template-rows: 15% 1fr;
     min-height: 90vh;
   }
 }
 
 @media (max-width: 395px) {
   .headerContainer {
-    min-height: 80vh;
-  }
-}
-
-@media (max-width: 270px) {
-  .headerContainer {
-    min-height: 90vh;
+    -ms-grid-rows: 10% 1fr;
+        grid-template-rows: 10% 1fr;
+    min-height: 70vh;
   }
 }
 
 .headerContainer header {
-  padding-top: 150px;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   -ms-grid-columns: 50% 1fr;
       grid-template-columns: 50% 1fr;
   width: 90%;
   margin: 0 auto;
-  min-height: 70vh;
-}
-
-@media (max-width: 1300px) {
-  .headerContainer header {
-    padding-top: 50px;
-    min-height: 60vh;
-  }
-}
-
-@media (max-width: 770px) {
-  .headerContainer header {
-    padding-top: 20px;
-    min-height: 50vh;
-  }
+  gap: 20px;
 }
 
 @media (max-width: 670px) {
@@ -327,7 +324,6 @@ footer {
         grid-template-columns: 100%;
     -ms-grid-rows: 50% 1fr;
         grid-template-rows: 50% 1fr;
-    gap: 40px;
         grid-template-areas: "picture" "title";
   }
   .headerContainer header .rightTitle {
@@ -339,6 +335,12 @@ footer {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: title;
+  }
+}
+
+@media (max-width: 395px) {
+  .headerContainer header {
+    gap: 0;
   }
 }
 
@@ -389,6 +391,7 @@ footer {
 .headerContainer header .leftTitle button {
   width: 80px;
   height: 80px;
+  margin: 20px;
   font-size: 1.2rem;
   font-weight: 600;
   font-family: "font-2";
