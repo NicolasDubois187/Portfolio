@@ -262,6 +262,27 @@ footer {
   }
 }
 
+@media (max-width: 1500px) {
+  .headerContainer {
+    -webkit-animation: animatedBackground 30s linear infinite alternate;
+            animation: animatedBackground 30s linear infinite alternate;
+  }
+}
+
+@media (max-width: 1000px) {
+  .headerContainer {
+    -webkit-animation: animatedBackground 40s linear infinite alternate;
+            animation: animatedBackground 40s linear infinite alternate;
+  }
+}
+
+@media (max-width: 500px) {
+  .headerContainer {
+    -webkit-animation: animatedBackground 50s linear infinite alternate;
+            animation: animatedBackground 50s linear infinite alternate;
+  }
+}
+
 .headerContainer::after {
   content: "";
   position: absolute;
@@ -733,6 +754,18 @@ footer {
   }
   to {
     background-position: 0 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  .contacts {
+    min-height: 40vh;
+  }
+}
+
+@media (max-width: 583px) {
+  .contacts {
+    min-height: 50vh;
   }
 }
 

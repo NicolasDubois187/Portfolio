@@ -17,6 +17,12 @@
     min-height: 60vh;
     max-width: 90%;
     margin: 50px auto;
+    @media (max-width: 770px) {
+        min-height: 40vh;
+    }
+    @media (max-width: 583px) {
+        min-height: 50vh;
+    }
 
 
 

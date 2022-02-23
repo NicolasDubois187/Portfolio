@@ -33,7 +33,7 @@ window.addEventListener("scroll", () => {
   else {
     idPicture.style.opacity = 1;
   }
-  if (window.scrollY > 1900) {
+  if (window.scrollY > 1950) {
     mail.style.opacity = 0.3;
     mail.style.transform = "translateY(80px)";
     linkedin.style.opacity = 0.3;
@@ -114,8 +114,4 @@ function mouseOverGit() {
 function mouseOutGit() {
   github.style.opacity = 0.3;
 }
-// if(screen.width > 283) {
-//   github.style.transform = "translateY(20px)";
-//   linkedin.style.transform = "translateY(20px)";
-//   mail.style.transform = "translateY(20px)";
-// }
+

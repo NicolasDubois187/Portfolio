@@ -16,6 +16,15 @@
     min-height: 100vh;
     position: relative;
     display: grid;
+    @media (max-width: 1500px) {
+        animation: animatedBackground 30s linear infinite alternate;
+    }
+    @media (max-width: 1000px) {
+        animation: animatedBackground 40s linear infinite alternate;
+    }
+    @media (max-width: 500px) {
+        animation: animatedBackground 50s linear infinite alternate;
+    }
     
 
     &::after {
