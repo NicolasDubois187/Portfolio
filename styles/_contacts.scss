@@ -18,13 +18,13 @@
     max-width: 90%;
     margin: 50px auto;
     padding: 5px;
-    @media (max-width: 769px) {
+    @media (max-width: 750px) {
         min-height: 40vh;
     }
     @media (max-width: 595px) {
         min-height: 70vh;
     }
-    @media (max-width: 406px) {
+    @media (max-width: 395px) {
         min-height: 50vh;
     }
     @media (max-width: 295px) {

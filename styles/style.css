@@ -758,7 +758,7 @@ footer {
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 750px) {
   .contacts {
     min-height: 40vh;
   }
@@ -770,7 +770,7 @@ footer {
   }
 }
 
-@media (max-width: 406px) {
+@media (max-width: 395px) {
   .contacts {
     min-height: 50vh;
   }
