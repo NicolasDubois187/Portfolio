@@ -17,17 +17,26 @@
     min-height: 60vh;
     max-width: 90%;
     margin: 50px auto;
-    @media (max-width: 770px) {
+    padding: 5px;
+    @media (max-width: 769px) {
         min-height: 40vh;
     }
-    @media (max-width: 583px) {
+    @media (max-width: 595px) {
+        min-height: 70vh;
+    }
+    @media (max-width: 406px) {
         min-height: 50vh;
     }
+    @media (max-width: 295px) {
+        min-height: 70vh;
+    }
+
 
 
 
     h3 {
         letter-spacing: 3px;
+       
     }
     .contactContainer {
 
@@ -48,7 +57,7 @@
             @media (max-width: 770px) {
                 min-width: 150Px;
             }
-            @media (max-width: 395px) {
+            @media (max-width: 406px) {
                 min-width: 100Px;
             }
                     
