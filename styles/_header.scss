@@ -9,7 +9,7 @@
           background-position: 100% 0;
         }
     }
-    background: url(../assets/img/smokeEffect1.jpg), url(../assets/img/smokeEffect2.jpg);
+    background: url(../assets/img/waterEffect.png);
     background-position: 0px 0px;
     background-repeat: repeat-x;
     animation: animatedBackground 20s linear infinite alternate;
@@ -94,8 +94,9 @@ inset 0 0 32px #c6e2ff;
             
                 .leftTitle {
                 
-                display: flex;
-                justify-content: space-between;
+                // display: flex;
+                // justify-content: space-between;
+                text-align: center;
                 align-items: center;
                 @media (max-width: 1000px) {
                     display: grid;

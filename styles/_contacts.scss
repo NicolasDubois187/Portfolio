@@ -10,17 +10,38 @@
         }
     }
 
-    background: url(../assets/img/smokeEffect2.jpg) right/cover;
+    background: url(../assets/img/nightSky2.jpg) right/cover;
     background-position: 0px 0px;
     background-repeat: repeat-y;
     animation: animatedBackground 30s linear infinite alternate;
-    min-height: 60vh;
-    max-width: 90%;
+    min-height: 100vh;
+    position: relative;
+    
     margin: 50px auto;
-    padding: 5px;
+    
    
     @media (max-width: 595px) {
         min-height: 70vh;
+    }
+    &::before {
+
+        content: "";
+        position: absolute;
+        border-radius: 10px;
+        height: 5px;
+        width: 100%;
+        background: black;
+        top: 0;
+        
+       
+        box-shadow:
+0 0 8px #fff,
+inset 0 0 8px #fff,
+0 0 16px #c6e2ff,
+inset 0 0 16px #c6e2ff,
+0 0 32px #c6e2ff,
+inset 0 0 32px #c6e2ff;
+
     }
   
 
@@ -29,6 +50,13 @@
 
     h3 {
         letter-spacing: 3px;
+        max-width: 90%;
+        margin: 0 auto;
+        padding-top: 200px;
+        @media (max-width: 595px) {
+            padding-top: 50px;
+        }
+
        
     }
     .contactContainer {

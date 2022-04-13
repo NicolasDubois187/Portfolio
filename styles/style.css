@@ -41,20 +41,12 @@ footer {
   margin-bottom: 20px;
 }
 
-#aboutMe {
-  padding-top: 50px;
-}
-
-#skills {
-  padding-top: 90px;
-}
-
 #experience {
   padding-top: 50px;
 }
 
 #myWork {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .navContainer {
@@ -217,8 +209,9 @@ footer {
 }
 
 .navContainer nav ul li:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  text-shadow: 0px 0px 8px 1px white;
 }
 
 .navContainer nav #navIcon {
@@ -233,7 +226,7 @@ footer {
 }
 
 .headerContainer {
-  background: url(../assets/img/smokeEffect1.jpg), url(../assets/img/smokeEffect2.jpg);
+  background: url(../assets/img/waterEffect.png);
   background-position: 0px 0px;
   background-repeat: repeat-x;
   -webkit-animation: animatedBackground 20s linear infinite alternate;
@@ -364,12 +357,7 @@ footer {
 }
 
 .headerContainer header .leftTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -467,8 +455,12 @@ footer {
   display: grid;
   -ms-grid-columns: 50% 1fr;
       grid-template-columns: 50% 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
-  margin: 50px auto;
+  margin: 0 auto;
+  min-height: 100vh;
   gap: 100px;
 }
 
@@ -476,11 +468,12 @@ footer {
   .aboutMe {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+    padding-top: 100px;
   }
 }
 
 .aboutMe h3 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   letter-spacing: 3px;
   line-height: 50px;
 }
@@ -491,38 +484,88 @@ footer {
 
 .aboutMe p {
   font-family: "font-2";
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding-bottom: 20px;
 }
 
 .aboutMe h5 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   letter-spacing: 3px;
   color: darkgoldenrod;
 }
 
 .aboutMe h6 {
   font-family: "font-2";
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: #766a6a;
 }
 
 .aboutMe span {
   font-family: "font-2";
+  font-size: 1.2rem;
 }
 
 .aboutMe .abilities li {
   font-family: "font-2";
-  font-size: 1.1 rem;
+  font-size: 1.5 rem;
   line-height: 35px;
+  text-align: left;
 }
 
 .aboutMe .abilities li img {
   margin-right: 10px;
 }
 
-.skills {
+.skillsContent {
+  min-height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.skillsContent::after {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  height: 5px;
+  width: 100%;
+  background: black;
+  bottom: -50px;
+  -webkit-box-shadow: 0 0 8px #fff, inset 0 0 8px #fff, 0 0 16px #c6e2ff, inset 0 0 16px #c6e2ff, 0 0 32px #c6e2ff, inset 0 0 32px #c6e2ff;
+          box-shadow: 0 0 8px #fff, inset 0 0 8px #fff, 0 0 16px #c6e2ff, inset 0 0 16px #c6e2ff, 0 0 32px #c6e2ff, inset 0 0 32px #c6e2ff;
+}
+
+.skillsContent h3 {
+  text-align: center;
+  font-size: 4.5rem;
+  letter-spacing: 10px;
+  margin-top: 40px;
+}
+
+@media (max-width: 580px) {
+  .skillsContent h3 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .skillsContent h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .skillsContent h3 {
+    font-size: 1.8rem;
+  }
+}
+
+.skillsContent .skills {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 1fr;
@@ -536,52 +579,65 @@ footer {
 }
 
 @media (max-width: 1020px) {
-  .skills {
+  .skillsContent .skills {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     padding-bottom: 10px;
   }
 }
 
-.skills h3 {
-  letter-spacing: 3px;
-}
-
-.skills em {
+.skillsContent .skills em {
   color: darkgoldenrod;
+  font-size: 1.5rem;
 }
 
-.skills span {
+.skillsContent .skills span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
 }
 
-.skills p {
+.skillsContent .skills p {
   margin-right: 10px;
   font-family: font-2;
 }
 
-.skills .skillsContainer {
+.skillsContent .skills .skillsContainer {
   padding: 20px 50px;
 }
 
 @media (max-width: 305px) {
-  .skills .skillsContainer {
+  .skillsContent .skills .skillsContainer {
     padding: 20px 20px;
   }
 }
 
-.skills .logoSkills {
+.skillsContent .skills .logoSkills {
+  display: -ms-grid;
+  display: grid;
   text-align: center;
   margin: auto;
+  position: relative;
 }
 
-.skills .logoSkills img {
+.skillsContent .skills .logoSkills #sass {
+  max-width: 60%;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -100px;
+}
+
+@media (max-width: 1020px) {
+  .skillsContent .skills .logoSkills #sass {
+    display: none;
+  }
+}
+
+.skillsContent .skills .logoSkills #logoSkillsPic {
   border-radius: 40px;
-  -webkit-box-shadow: 0px 0px 8px 1px white;
-          box-shadow: 0px 0px 8px 1px white;
+  opacity: 0.7;
   -webkit-transform: translateX(1000px);
           transform: translateX(1000px);
   -webkit-transition: 2s;
@@ -589,30 +645,68 @@ footer {
 }
 
 @media (max-width: 500px) {
-  .skills .logoSkills img {
+  .skillsContent .skills .logoSkills #logoSkillsPic {
+    display: none;
+  }
+}
+
+.skillsContent .skills .logoSkills #symfony {
+  max-width: 60%;
+  border-radius: 100%;
+  position: absolute;
+  right: 10px;
+  bottom: -100px;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+@media (max-width: 1020px) {
+  .skillsContent .skills .logoSkills #symfony {
     display: none;
   }
 }
 
 .myWork {
   max-width: 90%;
-  margin: 50px auto;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .myWork h4 {
   text-align: center;
-  font-size: 3rem;
-  letter-spacing: 3px;
+  font-size: 5rem;
+  letter-spacing: 10px;
+  margin: 0;
 }
 
-@media (max-width: 305px) {
+@media (max-width: 550px) {
+  .myWork h4 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .myWork h4 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 350px) {
   .myWork h4 {
     font-size: 2rem;
   }
 }
 
 .myWork .integrations {
-  margin-top: 50px;
+  margin: 50px 0;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -627,7 +721,7 @@ footer {
   border-radius: 50px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .myWork .integrations {
     background: none;
     -webkit-box-shadow: none;
@@ -665,7 +759,8 @@ footer {
 }
 
 .myWork .integrations button:hover {
-  background: linear-gradient(160deg, rgba(2, 0, 36, 0.78) 0%, #40c0e0 35%, #457d88 100%);
+  background: black;
+  color: aliceblue;
 }
 
 .myWork .integrations > div {
@@ -686,7 +781,6 @@ footer {
           box-shadow: 0px 0px 8px 1px white;
   border-radius: 50px;
   padding: 20px 20px 20px;
-  opacity: 0;
   gap: 10px;
 }
 
@@ -738,15 +832,14 @@ footer {
 }
 
 .contacts {
-  background: url(../assets/img/smokeEffect2.jpg) right/cover;
+  background: url(../assets/img/nightSky2.jpg) right/cover;
   background-position: 0px 0px;
   background-repeat: repeat-y;
   -webkit-animation: animatedBackground 30s linear infinite alternate;
           animation: animatedBackground 30s linear infinite alternate;
-  min-height: 60vh;
-  max-width: 90%;
+  min-height: 100vh;
+  position: relative;
   margin: 50px auto;
-  padding: 5px;
 }
 
 @keyframes animatedBackground {
@@ -764,8 +857,29 @@ footer {
   }
 }
 
+.contacts::before {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  height: 5px;
+  width: 100%;
+  background: black;
+  top: 0;
+  -webkit-box-shadow: 0 0 8px #fff, inset 0 0 8px #fff, 0 0 16px #c6e2ff, inset 0 0 16px #c6e2ff, 0 0 32px #c6e2ff, inset 0 0 32px #c6e2ff;
+          box-shadow: 0 0 8px #fff, inset 0 0 8px #fff, 0 0 16px #c6e2ff, inset 0 0 16px #c6e2ff, 0 0 32px #c6e2ff, inset 0 0 32px #c6e2ff;
+}
+
 .contacts h3 {
   letter-spacing: 3px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+@media (max-width: 595px) {
+  .contacts h3 {
+    padding-top: 50px;
+  }
 }
 
 .contacts .contactContainer {
