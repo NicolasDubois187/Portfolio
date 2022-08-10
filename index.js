@@ -7,7 +7,7 @@ window.addEventListener("scroll", () => {
     logoSkillsPic.style.transform = "translateX(1000px)";
   }
 
-  if (window.scrollY > 320) {
+  if (window.scrollY > 350) {
     int1.style.opacity = 1;
     int2.style.opacity = 1;
     int3.style.opacity = 1;
@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
   } else {
     idPicture.style.opacity = 1;
   }
-  if (window.scrollY > 2450) {
+  if (window.scrollY > 2600) {
     mail.style.opacity = 0.3;
     mail.style.transform = "translateY(0px)";
     linkedin.style.opacity = 0.3;
