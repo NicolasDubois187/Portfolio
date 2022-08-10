@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
   } else {
     idPicture.style.opacity = 1;
   }
-  if (window.scrollY > 2600) {
+  if (window.scrollY > 2450) {
     mail.style.opacity = 0.3;
     mail.style.transform = "translateY(0px)";
     linkedin.style.opacity = 0.3;
