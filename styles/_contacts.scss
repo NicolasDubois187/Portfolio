@@ -14,7 +14,7 @@
     background-position: 0px 0px;
     background-repeat: repeat-y;
     animation: animatedBackground 30s linear infinite alternate;
-    min-height: 100vh;
+    min-height: 80vh;
     position: relative;
     
     margin: 50px auto;
@@ -52,7 +52,7 @@ inset 0 0 32px #c6e2ff;
         letter-spacing: 3px;
         max-width: 90%;
         margin: 0 auto;
-        padding-top: 200px;
+        padding-top: 100px;
         @media (max-width: 595px) {
             padding-top: 50px;
         }
@@ -64,6 +64,7 @@ inset 0 0 32px #c6e2ff;
        display: flex;
        justify-content: space-around;
        flex-wrap: wrap;
+       overflow: hidden;
             
        img {
     

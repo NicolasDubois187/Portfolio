@@ -1,12 +1,8 @@
 .navContainer {
-
     display: flex;
     justify-content: center;
-
-    
     label, #toggle {
-        display: none;
-        
+        display: none;    
     }
     @media all and (max-width: 770px) {
    

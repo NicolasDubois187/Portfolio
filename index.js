@@ -1,13 +1,13 @@
 const form = document.querySelector("form");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 1300) {
+  if (window.scrollY > 1150) {
     logoSkillsPic.style.transform = "translateX(0px)";
   } else {
     logoSkillsPic.style.transform = "translateX(1000px)";
   }
 
-  if (window.scrollY > 600) {
+  if (window.scrollY > 320) {
     int1.style.opacity = 1;
     int2.style.opacity = 1;
     int3.style.opacity = 1;
@@ -23,13 +23,13 @@ window.addEventListener("scroll", () => {
   } else {
     idPicture.style.opacity = 1;
   }
-  if (window.scrollY > 2950) {
+  if (window.scrollY > 2600) {
     mail.style.opacity = 0.3;
-    mail.style.transform = "translateY(80px)";
+    mail.style.transform = "translateY(0px)";
     linkedin.style.opacity = 0.3;
-    linkedin.style.transform = "translateY(80px)";
+    linkedin.style.transform = "translateY(0px)";
     github.style.opacity = 0.3;
-    github.style.transform = "translateY(80px)";
+    github.style.transform = "translateY(0px)";
   } else {
     mail.style.opacity = 0;
     mail.style.transform = "translateY(500px)";
